@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+  width="24" height="24" viewBox="0 0 1080 1080" xml:space="preserve">
+  <g transform="matrix(1 0 0 1 540 540)" id="63886752-baf9-43db-a193-080dc892b325"  >
+  </g>
+  <g transform="matrix(1 0 0 1 540 540)" id="c2f9a777-81a2-4fa5-b10e-5b36ac79491c"  >
+  <rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+  </g>
+  <g transform="matrix(45 0 0 45 540 540)"  >
+  <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-12, -12)" d="M 0 0 L 24 0 L 24 24 L 0 24 z" stroke-linecap="round" />
+  </g>
+  <g transform="matrix(45 0 0 45 540 540)"  >
+  <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-12, -12)" d="M 12 2 C 6.48 2 2 6.48 2 12 C 2 17.52 6.48 22 12 22 C 17.52 22 22 17.52 22 12 C 22 6.48 17.52 2 12 2 z M 12 5 C 13.66 5 15 6.34 15 8 C 15 9.66 13.66 11 12 11 C 10.34 11 9 9.66 9 8 C 9 6.34 10.34 5 12 5 z M 12 19.2 C 9.5 19.2 7.29 17.919999999999998 6 15.979999999999999 C 6.03 13.989999999999998 10 12.899999999999999 12 12.899999999999999 C 13.99 12.899999999999999 17.97 13.989999999999998 18 15.979999999999999 C 16.71 17.919999999999998 14.5 19.2 12 19.2 z" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+{
+    "menu": {
+        "home": "होम",
+        "reports": "अहवाल (Ahval)",
+        "tasks": "कामे",
+        "complaints": "तक्रारीं",
+        "vendors": "वेंडर्स",
+        "employees": "कर्मचारी",
+        "attendance": "उपस्थिती",
+        "serviceRequest": "सर्व्हिस रिक्वेस्ट",
+        "catalog": "प्रॉडक्ट कॅटलॉग"
+    },
+    "general": {
+        "service": "सर्विस",
+        "category": "कॅटेगरी",
+        "description":"डिस्क्रिप्शन",
+        "assignee":"असाइन",
+        "status":"स्टेटस",
+        "comment":"कमेंट्स",
+        "documents":"डॉक्युमेंट्स",
+        "edit":"संपांदित करा",
+        "delete":"हठवा",
+        "create":"क्रिएट करा",
+        "subTask":"सब टास्क",
+        "staff":"कर्मचारी",
+        "inspaccokam":"Inspacco Key Account Manager",
+        "servicevisitschedule":"Service Visit Schedule",
+        "comments":"Comments",
+        "attachments":"डॉक्युमेंट्स"
+    }
+}

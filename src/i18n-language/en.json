@@ -1,0 +1,35 @@
+{
+    "menu": {
+      "home": "Home",
+      "reports": "Reports",
+      "tasks": "Tasks",
+      "complaints": "Complaints",
+      "vendors": "Vendors",
+      "employees": "Employees",
+      "attendance": "Attendance",
+      "serviceRequest": "Service Requests",
+      "catalog":"Catalog",
+      "dashboard":"Dashboard"
+    },
+    "general": {
+        "service": "Service",
+        "category": "Category",
+        "description":"Description",
+        "assignee":"Assignee",
+        "status":"Status",
+        "comment":"Comments",
+        "documents":"Documents",
+        "edit":"Edit",
+        "delete":"Delete",
+        "create":"Create",
+        "subTask":"Sub Task",
+        "staff":"Staff",
+        "inspaccokam":"Inspacco Key Account Manager",
+        "servicevisitschedule":"Service Visit Schedule",
+        "tasks":"Tasks",
+        "comments":"Comments",
+        "attachments":"Attachments",
+        "requirements":"Requirements",
+        "client":"Client"
+    }
+  }

@@ -1,0 +1,50 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
+
+pipelines:
+  branches:
+    develop:
+    - step:
+        name: Install
+        caches:
+        - node
+        script:
+        - npm install --force
+        - npm install --save-dev @parcel/transformer-css --force
+    - step:
+        name: Build
+        script:
+        - npm run build
+        caches:
+        - node
+        artifacts:
+        - dist/**
+    - step:
+        name: Copy Build dir to Remote Server
+        script:
+        - echo "$MY_SSH_KEY"
+        # - chmod 600 $BITBUCKET_CLONE_DIR/id_rsa.pem
+        # - scp -r -i $BITBUCKET_CLONE_DIR/id_rsa.pem dist/* ubuntu@dev.inspacco.com:/home/ubuntu/code/dev-web-portal-build
+        - pipe: atlassian/scp-deploy:1.5.0
+          variables:
+            USER: 'ubuntu'
+            SERVER: 'dev.inspacco.com'
+            REMOTE_PATH: '/home/ubuntu/code/dev-web-portal-build'
+            LOCAL_PATH: 'dist/*'
+            SSH_KEY: $MY_SSH_KEY
+            DEBUG: 'true'
+            EXTRA_ARGS: ['-o', 'ServerAliveInterval=10']
+    # - step:
+    #     name: Start Web Portal
+    #     script:
+    #     - pipe: atlassian/ssh-run:0.4.2
+    #       variables:
+    #         SSH_USER: 'ubuntu'
+    #         SERVER: 'dev.inspacco.com'
+    #         SSH_KEY: $MY_SSH_KEY
+    #         MODE: "script"
+    #         COMMAND: '/home/ubuntu/start-web-portal.sh' # path to a script in your repository

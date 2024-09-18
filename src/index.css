@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+}
+
+@layer components {
+  .my-react-select-container .my-react-select__control,
+  .my-react-select__menu-portal .my-react-select__control {
+    @apply bg-base-100 border-gray-300 dark:border-gray-600 transition-all duration-500 rounded-lg min-h-12;
+  }
+
+  .my-react-select-container {
+    @apply bg-base-100;
+  }
+
+  .my-react-select-container .my-react-select__control--is-focused,
+  .my-react-select__menu-portal .my-react-select__control--is-focused {
+    @apply bg-base-100 text-slate-300 transition-all duration-500;
+  }
+
+  .my-react-select-container .my-react-select__menu,
+  .my-react-select__menu-portal .my-react-select__menu {
+    @apply bg-base-100 transition-all duration-500;
+  }
+
+  .my-react-select-container .my-react-select__option,
+  .my-react-select__menu-portal .my-react-select__option {
+    @apply bg-base-100 text-base-content transition-all duration-500 text-sm;
+  }
+
+  .my-react-select-container .my-react-select__option--is-focused,
+  .my-react-select__menu-portal .my-react-select__option--is-focused {
+    @apply bg-accent text-white transition-all duration-500 text-sm;
+  }
+
+  .my-react-select-container .my-react-select__indicator-separator,
+  .my-react-select__menu-portal .my-react-select__indicator-separator {
+    @apply bg-neutral-400 transition-all duration-500;
+  }
+
+  .my-react-select-container .my-react-select__input-container,
+  .my-react-select-container .my-react-select__placeholder,
+  .my-react-select-container .my-react-select__single-value,
+  .my-react-select__menu-portal .my-react-select__input-container,
+  .my-react-select__menu-portal .my-react-select__placeholder,
+  .my-react-select__menu-portal .my-react-select__single-value {
+    @apply text-base-content transition-all duration-500;
+  }
+
+  .my-react-select-container.sm .my-react-select__control,
+  .my-react-select-container.sm .my-react-select-container,
+  .my-react-select-container.sm .my-react-select__input-container,
+  .my-react-select-container.sm .my-react-select__value-container {
+    @apply h-[30px] w-[190px] max-w-[190px];
+    min-height: 30px;
+  }
+
+  .my-react-select-container.sm .my-react-select__option,
+  .my-react-select-container.sm .my-react-select__option--is-focused {
+    @apply text-[13px];
+  }
+
+  .my-react-select-container.sm .my-react-select__control {
+    @apply items-start;
+  }
+
+  .my-react-select-container.sm .my-react-select__value-container,
+  .my-react-select-container.sm .my-react-select__input-container {
+    @apply py-0 m-0;
+  }
+
+  .my-react-select-container.sm .my-react-select__placeholder,
+  .my-react-select-container.sm .my-react-select__input-container,
+  .my-react-select-container.sm .my-react-select__single-value {
+    @apply text-[13px];
+  }
+  .my-react-select-container.sm .my-react-select__indicators {
+    @apply h-[30px];
+  }
+  .my-react-select-container.sm .my-react-select__dropdown-indicator {
+    @apply pt-[7px];
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.my-react-select__menu-portal {
+  z-index: 25 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+::-webkit-resizer {
+  background-color: transparent;
+}

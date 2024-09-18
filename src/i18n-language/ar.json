@@ -1,0 +1,30 @@
+{
+    "menu": {
+        "home": "الرئيسية",
+        "reports": "التقارير",
+        "tasks": "المهام",
+        "complaints": "الشكاوي",
+        "vendors": "البائعون",
+        "employees": "الموظفون",
+        "attendance": "الحضور",
+        "serviceRequest": "طلب خدمة",
+        "catalog":"بيان المنتج"
+    },
+    "general": {
+        "service": "خدمة",
+        "category": "فئة",
+        "description":"وصف",
+        "assignee":"المحال إليه",
+        "status":"مَكانة ",
+        "comment":"تعليقات",
+        "documents":"وثائق",
+        "edit":"يحرر",
+        "delete":"يمسح",
+        "create":"يخلق",
+        "subTask":"فرعية",
+        "staff":"طاقم عمل",
+        "inspaccokam":"Inspacco Key Account Manager",
+        "servicevisitschedule":"Service Visit Schedule",
+        "comments":"تعليقات"
+    }
+}

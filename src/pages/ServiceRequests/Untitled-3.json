@@ -1,0 +1,28 @@
+[
+  {
+    "group": "G1",
+    "fields": [
+      {
+        "label": "Scope Of Work",
+        "name": "scopeOfWork",
+        "isRequired": true,
+        "type": "DYNAMICTEXT",
+        "value": ""
+      },
+      {
+        "label": "Address",
+        "name": "societyAddress",
+        "isRequired": true,
+        "type": "TEXTAREA",
+        "value": ""
+      },
+      {
+        "label": "Target Pricing/Budget Allocated",
+        "name": "targetPricing",
+        "isRequired": true,
+        "type": "NUMBER",
+        "value": " "
+      }
+    ]
+  }
+]
