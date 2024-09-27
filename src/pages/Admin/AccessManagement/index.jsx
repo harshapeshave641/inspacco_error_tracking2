@@ -54,6 +54,10 @@ function AssignRoleForm({ className, onSubmit = fn }) {
   console.log("societies", societies);
   console.log("vendors", vendors);
 
+  function TestError1() {
+    const a=2;
+    a.nono();
+  }
   useEffect(() => {
     const roles = pickupDataFromResponse({ data: rolesRes });
     const customRoles = roles?.map((role) => {
@@ -68,7 +72,9 @@ function AssignRoleForm({ className, onSubmit = fn }) {
 
   return (
     <div className={`flex flex-between ${className} `}>
+      
       <div className="form-control ">
+      <TestError1/>
         <Select
           native={true}
           className={"ml-4 mb-4 w-full"}

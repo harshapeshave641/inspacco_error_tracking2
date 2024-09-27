@@ -1,5 +1,6 @@
 import React from 'react';
 import rollbar from '../rollbar';
+import { connect } from 'react-redux';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -13,8 +14,11 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, info) {
     console.log('Error caught by ErrorBoundary:', error);
-  console.log('Error info:', info);
-    rollbar.error(error, { extra: info });
+    console.log('Error info:', info);
+
+    const { user, activeRole } = this.props; 
+    console.log(error)
+    rollbar.error(error, { extra: info, user, activeRole });
   }
 
   render() {
@@ -26,4 +30,9 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-export default ErrorBoundary;
+const mapStateToProps = (state) => {
+  const { user, activeRole } = state.authSlice;
+  return { user, activeRole };
+};
+
+export default connect(mapStateToProps)(ErrorBoundary);

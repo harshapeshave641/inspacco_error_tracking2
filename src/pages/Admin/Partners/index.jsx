@@ -290,6 +290,10 @@ export default function AdminPartners() {
       }
     }
   }
+  function TestError1() {
+    const a=2;
+    a.nono();
+  }
   console.log("ParrnterFormData", partnerFormData);
   // function getServiceSubscriptionBySociety(value) {
   //   getActiveServiceSubs({
@@ -330,6 +334,7 @@ export default function AdminPartners() {
       {/* <div>
         <Breadcrumb path={[{ route: "/", name: "Home" }]} />
       </div> */}
+      <TestError1/>
       <div className="px-4 py-2 mb-1 rounded-lg">
         <div className="pb-2 pl-3 bg-base-100">
           <FiltersBar

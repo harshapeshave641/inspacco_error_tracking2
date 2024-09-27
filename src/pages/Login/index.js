@@ -18,7 +18,10 @@ import { getOtp } from "../../thunk/authThunk";
 import { useDispatch } from "react-redux";
 import { logout, setAuthPayload } from "../../slice/authSlice";
 import Register from "../Register";
-
+function TestError1() {
+  const a=2;
+  a.nono();
+}
 export default function Login() {
   const [mobile, setMobile] = useState({ value: "", error: "" });
   const [showOtpField, setShowOtpField] = useState(false);
@@ -123,6 +126,7 @@ export default function Login() {
   
   return (
     <div className="p-4 h-screen bg-[#03386A] text-primary flex justify-center items-center">
+      {/* <TestError1/> */}
       <div className="p-8 shadow-xl card lg:card-side bg-base-100">
         <div classname="card-body">
           <div className="text-left">

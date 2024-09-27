@@ -22,7 +22,10 @@ import HoverIcon from "../../components/common/HoverIcon";
 import Modal from "../../components/common/Modal";
 import AttachmentList from "../../components/common/Attachments/AttachmentList";
 import FileSelector from "../../components/fileSelector";
-
+function TestError1() {
+  const a=2;
+  a.nono();
+}
 import {
   IncidentCategory,
   IncidentPiority,
@@ -423,6 +426,7 @@ const CreateNewComplaintForm = ({
   return (
     <>
       <div className="flex flex-col items-center pt-4 mx-6 overflow-y-auto gap-y-4">
+        {/* <TestError1/> */}
         <div className="mx-6 mt-6 form-control sm:w-full md:w-full lg:w-1/2 ">
           <label className="pb-1 text-lg font-medium label-text text-accent">
             Services <span className="text-red-500">*</span>

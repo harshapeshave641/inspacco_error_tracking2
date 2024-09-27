@@ -31,9 +31,15 @@ import env from "../../env";
 import RatingComp from "../common/Rating";
 import LabelValue from "../common/LabelValue";
 import { PARTNER_RATING_PARAMS } from "../../constants";
+function TestError1() {
+  const a=2;
+  a.nono();
+}
 const Skeleton = () => {
   return (
+    
     <div role="status" class="animate-pulse">
+      {/* <TestError1/> */}
       <div class="h-4 bg-base-300 rounded-full mb-4"></div>
       <div className="animate-pulse">
         <div>

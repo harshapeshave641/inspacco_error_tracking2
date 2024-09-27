@@ -64,7 +64,10 @@ const ServiceRequestBulkUpload = ({ onDone }) => {
 
     reader.readAsText(file);
   };
-
+  function TestError1() {
+    const a=2;
+    a.nono();
+  }
   const handleCreateNewSR = async (row) => {
     console.log("row", row);
     const serviceName = row["Service Name"];
@@ -348,6 +351,7 @@ const ServiceRequestBulkUpload = ({ onDone }) => {
   };
   return (
     <div>
+      {/* <TestError1/> */}
       <div className="flex justify-between mt-10">
         <div className="flex">
           <div>

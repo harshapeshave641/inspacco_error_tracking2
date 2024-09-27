@@ -121,6 +121,10 @@ function getColumnDefs(reportType, data = []) {
     })
   }
 }
+function TestError1() {
+  const a=2;
+  a.nono();
+}
 const Reports = () => {
   const query = useQuery();
   console.log('startDate', query.get('startDate'))
@@ -367,6 +371,7 @@ const Reports = () => {
   return (
     <>
       <div className=" gap-6 p-4 flex flex-col">
+        <TestError1/>
         <div className="flex flex-col sm:flex-row pt-4 ">
           <Datepicker
             containerClassName="w-72 h-12"

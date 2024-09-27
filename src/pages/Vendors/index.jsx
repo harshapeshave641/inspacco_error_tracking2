@@ -41,10 +41,14 @@ const Vendors = () => {
   }, [activeAccountId]);
 
   const handleVendorSelection = (node) => setSelectedVendor(node);
-
+  function TestError1() {
+    const a=2;
+    a.nono();
+  }
   return (
     <>
       <div className="container">
+        <TestError1/>
         <div className="flex lg:flex-row md:flex-row sm:flex-col">
           <div className="sm:w-full md:w-2/4 lg:w-6/12 bg-base-200 px-4 pt-4">
             <div className="rounded-xl-tl rounded-xl-bl">

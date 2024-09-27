@@ -20,7 +20,10 @@ import DataGrid from "../../../components/common/DataTable/DataGrid";
 import { ClientFacilityFieldMapping } from "../../../constants";
 
 
-
+function TestError1() {
+    const a=2;
+    a.nono();
+  }
 const mandatoryFields = ["Name", "Unique Code", "Address", "Pincode"]
 function StatusRenderer({ value }) {
     return (
@@ -194,6 +197,7 @@ const BulkClientFacility = ({ activeSociety, onDone, clientFacilities = [] }) =>
     };
     return (
         <div className="mt-5">
+            <TestError1/>
             <div className="flex justify-between mt-10">
                 <div className="flex">
                     <div>

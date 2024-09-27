@@ -88,9 +88,12 @@ export default function AdminSidebar({ onChange }) {
       hide: activeRole == "INSPACCO_KAM" ? true : false,
     },
   ];
+ 
   // console.log("menuItems", menuItems);
   return (
+    
     <div>
+      {/* <TestError1/> */}
       <ul className="space-y-2 text-sm tracking-wide">
         {menuItems
           .filter((obj) => !obj.hide)

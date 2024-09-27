@@ -14,7 +14,8 @@
     "build": "parcel build public/index.html --no-scope-hoist",
     "serve": "serve -p 4000 -s dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-e2e": "jest"
+    "test-e2e": "jest",
+    "webpack-build": "webpack"
   },
   "devDependencies": {
     "buffer": "^5.5.0||^6.0.0",
@@ -25,6 +26,8 @@
     "parcel": "2.8.3",
     "playwright": "^1.45.3",
     "process": "^0.11.10",
+    "rimraf": "^6.0.1",
+    "rollbar-sourcemap-webpack-plugin": "^3.3.0",
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
@@ -37,10 +40,13 @@
     "ag-grid-community": "^29.3.5",
     "ag-grid-react": "^29.3.5",
     "apollo-upload-client": "^17.0.0",
+    "axios": "^1.7.7",
     "chart.js": "^4.3.0",
     "chartjs-plugin-datalabels": "^2.2.0",
     "classnames": "*",
     "dayjs": "^1.11.7",
+    "form-data": "^4.0.0",
+    "formdata-polyfill": "^4.0.10",
     "formik": "^2.2.9",
     "graphql": "^16.6.0",
     "html2canvas": "^1.4.1",

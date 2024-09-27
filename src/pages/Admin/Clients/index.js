@@ -100,10 +100,14 @@ const AdminClients = () => {
     });
 
 
-
+    function TestError1() {
+      const a=2;
+      a.nono();
+    }
 
   return (
     <div className="flex flex-col h-[100%] overflow-hidden">
+      <TestError1/>
       <nav className="flex items-center justify-between p-4 text-black bg-white">
         <h2 className="h-10 text-2xl font-bold">List of All Clients</h2>
         <div className="mx-4 space-x-4">
